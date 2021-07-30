@@ -1,0 +1,70 @@
+.header-logo {
+  display: inline-block;
+  vertical-align: top;
+  width: 147px;
+  height: 40px;
+  margin-left: -52px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: 130px;
+  }
+
+  @media (min-width: @wide-width) {
+    margin-left: 30px;
+  }
+}
+
+.header-logo__svg {
+  fill: @white;
+  color: @pink;
+  padding-top: 5px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
+
+  &:hover {
+    fill: @pink;
+  }
+
+  &:active {
+    fill: @white;
+    color: @pink;
+    opacity: 0.3;
+  }
+}
+
+.svg-sprite__header-logo--glasses {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.svg-sprite__header-logo--glasses-crop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
+}
+
+.svg-sprite__header-logo--star-icon,
+.svg-sprite__header-logo--stars-icon {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+    fill: @pink;
+    color: @pink;
+  }
+}

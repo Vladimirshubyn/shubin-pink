@@ -1,0 +1,90 @@
+.map {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+
+  @media (min-width: @tablet-width) {
+    height: 373px;
+    margin-top: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 501px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 33px;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-size: 100% 33px;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+
+    @media (min-width: @tablet-width) {
+      height: 67px;
+      background-size: 100% 67px;
+    }
+
+    @media (min-width: @desktop-width) {
+      height: 104px;
+      background-size: 100% 104px;
+    }
+  }
+}
+
+.map__image {
+  top: -222%;
+  left: 50%;
+  width: 360px;
+
+  @media (min-width: @tablet-width) {
+    top: -93%;
+    width: 700px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -53%;
+    width: 1200px;
+  }
+
+  @media (min-width: @wide-width) {
+    top: -53%;
+    width: 100%;
+  }
+}
+
+.map__marker {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -45%);
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/icon-map-marker.svg");
+  background-size: 35px 35px;
+  background-repeat: no-repeat;
+}
+
+.map__interactive {
+  z-index: 50;
+  position: absolute;
+  top: -50%;
+  width: 320px;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+    width: 700px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 0;
+    width: 100%;
+    height: 600px;
+  }
+}
